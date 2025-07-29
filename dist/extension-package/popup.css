@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 600px;
+    width: 400px;
+}
+
+.container {
+    padding: 20px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.95);
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.upload-section {
+    margin-bottom: 25px;
+}
+
+.file-input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #3498db;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 80px;
+}
+
+.file-label:hover {
+    border-color: #2980b9;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+.upload-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.upload-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.file-name {
+    font-size: 14px;
+    color: #27ae60;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.options-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.options-section h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.option {
+    margin-bottom: 12px;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #495057;
+    cursor: pointer;
+}
+
+.option input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.option select {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background: white;
+    font-size: 14px;
+}
+
+.action-section {
+    margin-bottom: 20px;
+}
+
+.convert-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.convert-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #218838 0%, #1e7e78 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
+}
+
+.convert-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.status {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.status.processing {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.download-section {
+    text-align: center;
+}
+
+.download-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #007bff 0%, #6f42c1 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #5a2d91 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 420px) {
+    body {
+        width: 100%;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+}
