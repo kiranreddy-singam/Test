@@ -1,0 +1,20 @@
+ICON FILES NEEDED
+=================
+
+This directory should contain the following PNG icon files for the Chrome extension:
+
+- icon16.png (16x16 pixels) - Small toolbar icon
+- icon32.png (32x32 pixels) - Medium icon
+- icon48.png (48x48 pixels) - Extension management page
+- icon128.png (128x128 pixels) - Chrome Web Store and large displays
+
+CREATING ICONS:
+- Use a vector graphics program (like Inkscape, Illustrator, or online tools)
+- Design a simple PDF/PowerPoint conversion icon
+- Suggested design: Document with arrow pointing to slides icon
+- Export in PNG format at the required sizes
+- Ensure icons are clean and visible at small sizes
+
+The extension will work without these icons, but they improve the user experience and professionalism.
+
+For quick testing, you can use placeholder square PNG files with solid colors.
