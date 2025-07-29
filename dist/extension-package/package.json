@@ -1,0 +1,39 @@
+{
+  "name": "pdf-to-ppt-converter",
+  "version": "1.0.0",
+  "description": "Chrome extension to convert PDF files to PowerPoint presentations",
+  "main": "popup.js",
+  "scripts": {
+    "build": "echo 'Extension ready for deployment'",
+    "test": "echo 'No tests configured yet'",
+    "lint": "echo 'No linting configured yet'",
+    "pack": "web-ext build --source-dir . --artifacts-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/pdf-to-ppt-converter"
+  },
+  "keywords": [
+    "chrome-extension",
+    "pdf",
+    "powerpoint",
+    "converter",
+    "ppt",
+    "presentation",
+    "document-conversion"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "web-ext": "^7.9.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pdf-to-ppt@example.com"
+    }
+  }
+}
